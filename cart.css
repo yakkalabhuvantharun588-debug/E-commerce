@@ -1,0 +1,32 @@
+body{
+   background-color: white;
+    color: rgb(246, 255, 127);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    background-color: khaki;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: blue;
+    margin: 0px 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.c{
+    background-color: gray;
+    color: black;
+}
+footer{
+    background-color: rgb(148, 148, 190);
+    color: black;
+    text-align: center;
+    padding: 5px ;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+}

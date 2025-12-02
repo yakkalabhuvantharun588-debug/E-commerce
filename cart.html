@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link rel="stylesheet" href="product.css">
+</head>
+<body>
+        <header>
+             <div id="user-display"></div>
+        <h1>🛍 MyShop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.css">Products</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+<section class="c">
+    <h2>Your shopping items</h2>
+    <div id="cart items"></div>
+    <h3 id="total">Total: $0.00</h3>
+    <button id="check button">check out</button>
+
+</section>
+     
+     <script>
+   let user = localStorage.getItem("loginUser");
+
+if(user){   
+   document.getElementById("user-display").innerText = "Welcome, " + user;
+}
+</script>
+<script src="java script.js"></script>
+    
+    
+</body>
+</html>

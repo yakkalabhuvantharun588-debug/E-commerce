@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+        <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+        <div id="user-display"></div>
+         <h1>🛍 MyShop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <div class="m">
+        <div class="box">
+        <h2>Shoes</h2><br>
+<img src="images/shoes1.jpeg">
+        <h4>$75.00</h4><br>
+        <button onclick="AddToCart('Shoes Added To Cart',75.00)">Add To Cart</button>
+        </div>
+        <div class="box">
+        <h2>IPhone 17 pro Max</h2><br>
+<img src="images/iphone1.jpeg">
+        <h4>$1752.00</h4><br>
+        <button onclick="AddToCart('Iphone 17 pro Max Added To Cart',1752.00)">Add To Cart</button>
+        </div>
+         <div class="box">
+        <h2>Smart Watch</h2><br>
+<img src="images/watch.jpeg">
+        <h4>$400.00</h4><br>
+        <button onclick="AddToCart('Smart Watch  Added To Cart',400.00)">Add To Cart</button>
+        </div>
+            <div class="box">
+        <h2>bracelet</h2><br>
+      <img src="images/bracelet.jpeg">
+        <h4>$120.00</h4><br>
+        <button onclick="AddToCart('bracelet Added To Cart ',120.00)">Add To Cart</button>
+        </div>
+            <div class="box">
+        <h2>Wallet</h2><br>
+        <img src="images/wallet.jpeg">
+        <h4>$29.00</h4><br>
+        <button onclick="AddToCart('Wallet Added To Cart',29.00)">Add To Cart</button>
+        </div>
+         <div class="box">
+        <h2>Neck Band</h2><br>
+        <img src="images/neckband.jpeg">
+        <h4>$250.00</h4><br>
+        <button onclick="AddToCart(' Neck Band Added To Cart',250.00)">Add To Cart</button>
+        </div>
+        <div class="box">
+        <h2>Samsung Laptop</h2><br>
+        <img src="images/samsung.jpeg">
+        <h4>$999.00</h4><br>
+        <button onclick="AddToCart(' Laptop Added To Cart',999.00)">Add To Cart</button>
+        </div>
+        <div class="box">
+        <h2>Samsung earbuds</h2><br>
+        <img src="images/earbude.jpeg">
+        <h4>$225.00</h4><br>
+        <button onclick="AddToCart(' Samsung earbuds Added To Cart',999.00)">Add To Cart</button>
+        </div>
+        <div class="box">
+        <h2>Haier Air Conditioner </h2><br>
+        <img src="images/ac.jpeg">
+        <h4>$635.00</h4><br>
+        <button onclick="AddToCart('Air Conditioner Added To Cart',999.00)">Add To Cart</button>
+        </div>
+        <div class="box">
+        <h2>LG Fridge</h2><br>
+        <img src="images/fridge.jpeg">
+        <h4>$963.00</h4><br>
+        <button onclick="AddToCart(' Fridge Added To Cart',999.00)">Add To Cart</button>
+        </div>
+        
+    </div>
+   
+    <footer>
+   <p> © 2025 Myshop. All Rights Are Reserved.</p> 
+</footer>
+ <script>
+   let user = localStorage.getItem("loginUser");
+
+if(user){   
+   document.getElementById("user-display").innerText = "Welcome, " + user;
+}
+</script>
+    <script src="java script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function validate(form)
+{
+   var a1 = form.t1.value;
+   var a2 = form.t2.value;
+
+   if(a1 == "Bhuvan" && a2 == "Bhuvan"){
+      // store actual username
+      localStorage.setItem("loginUser", a1);
+      alert("Login successful");
+      return true;
+   }
+   else{
+      alert("Please enter correct credentials");
+      return false;
+   }
+}  
+</script>
+
+
+</head>
+<body>
+    <form name="form" action="index.html">
+<center>
+    <div id="login">
+    <h1>E-commerce Login</h1>
+    Username: <input type ="text" name="t1"><br><br>
+    Password: <input type="password" name="t2"><br><br>
+    <input type="submit" onclick="return validate(this.form)">
+    </div>
+    </center>
+     </form>  
+       <script src="java script.js"></script>
+    </body>
+    </html>
+
+
+<style>
+  /* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login container */
+#login {
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading */
+#login h1 {
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* Input fields */
+#login input[type="text"],
+#login input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+#login input[type="text"]:focus,
+#login input[type="password"]:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.4);
+}
+
+/* Submit button */
+#login input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#login input[type="submit"]:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  #login {
+    padding: 35px 25px;
+  }
+  #login h1 {
+    font-size: 22px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+  </style>

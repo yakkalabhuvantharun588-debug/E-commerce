@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       <header>
+       <div id="user-display"></div>
+       <h1>🛍 MyShop</h1>
+       <nav>
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="mobiles.html">Mobiles</a>
+        <a href="Laptops.html">laptops</a>
+        <a href="shoes.html">Shoes</a>
+        <a href="Smart watch.html">Smart watch</a>
+        <a href="Wallet.html">Wallet</a>
+        <a href="cart.html">Cart</a>
+       </nav>  
+       </header>  
+<section class="main1">
+     <marquee>Thank you For Visiting Your Cart is Calling</marquee>
+    <h2>welcome to Home Page</h2>
+    <p>Find your Food Items On Top</p>
+   <button class="btn"><a href="product.html" class="btn">Shop</a></button>
+  </section>
+     <section class="tags">
+      <h2>Why choose us ?</h2>
+      <ul>
+        <li> ✔ High quality Packing Products</li>
+        <li> ✔ Lower Best prices </li>
+        <li> ✔ Fast & Secure Delivery</li>
+        <li> ✔ 24/7 Customer Support</li>
+        <li> ✔ Easy return & Refunds</li>
+      </ul>
+     </section>
+<footer>
+   <p> © 2025 Myshop. All Rights Are Reserved.</p> 
+</footer>
+<script>
+let user = localStorage.getItem("loginUser");
+
+if(user){   
+   document.getElementById("user-display").innerText = "Welcome, " + user;
+}
+</script>
+
+</body>
+</html>
